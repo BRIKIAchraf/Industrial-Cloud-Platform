@@ -40,6 +40,18 @@ services:
     volumes:
       - ./infra/postgres/data:/var/lib/postgresql/data
 
+  # OT Simulator - OPC-UA (Factory Lines)
+  ot-simulator:
+    build: 
+      context: ./services/ot-simulator
+      dockerfile: Dockerfile
+    container_name: ot-simulator
+    ports:
+      - "4840:4840"
+      - "5020:5020" # Modbus port
+    depends_on:
+      - mosquitto
+
   # Edge Gateway - Node-RED
   nodered:
     image: nodered/node-red:latest

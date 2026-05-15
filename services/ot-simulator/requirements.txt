@@ -1,3 +1,4 @@
 asyncua
 paho-mqtt
 python-dotenv
+pymodbus

@@ -1,0 +1,30 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Industrial Factory Line 1",
+    "tags": ["factory", "iot"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Temperature Trends",
+        "datasource": "InfluxDB",
+        "targets": [
+          {
+            "query": "from(bucket: \"telemetry\") |> range(start: v.timeRangeStart, stop: v.timeRangeStop) |> filter(fn: (r) => r._measurement == \"machine_data\" and r._field == \"Temperature\")"
+          }
+        ]
+      },
+      {
+        "type": "gauge",
+        "title": "Current Power Usage",
+        "datasource": "InfluxDB",
+        "targets": [
+          {
+            "query": "from(bucket: \"telemetry\") |> range(start: -1m) |> filter(fn: (r) => r._measurement == \"machine_data\" and r._field == \"PowerUsage\") |> last()"
+          }
+        ]
+      }
+    ]
+  }
+}

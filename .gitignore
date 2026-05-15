@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+dist/
+.env
+
+# Docker Data
+infra/influxdb/data/
+infra/postgres/data/
+infra/mosquitto/data/
+infra/mosquitto/log/
+infra/nodered/data/
+infra/grafana/data/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+{
+  "topic": "factory/line1/telemetry",
+  "machine_id": "robot-07",
+  "timestamp": "2026-01-15T10:30:00Z",
+  "temperature_c": 42.6,
+  "pressure_bar": 5.1,
+  "status": "healthy",
+  "source": "opcua-simulator"
+}

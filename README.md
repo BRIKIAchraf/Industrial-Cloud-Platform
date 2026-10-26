@@ -1,3 +1,8 @@
+
+
+## About
+
+Reference Industry 4.0 architecture bridging simulated PLC/OPC-UA systems with Node-RED, MQTT, Kafka, time-series storage and operational monitoring.
 # Industrial Cloud Platform
 
 Reference architecture connecting simulated operational technology (OT) to cloud-style data services for monitoring and controlled industrial commands.

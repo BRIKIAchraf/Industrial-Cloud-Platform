@@ -81,3 +81,12 @@ Portfolio architecture and local industrial simulation. Hardware integration, se
 ## Author
 
 **Achraf BRIKI** · [LinkedIn](https://www.linkedin.com/in/achrafbriki/) · [Portfolio](https://achrafbriki.com)
+
+## Delivery profile
+
+**Status:** Prototype  
+**Demo:** Local Docker environment with Node-RED, MQTT, Kafka, InfluxDB and Grafana.  
+**Prerequisites:** Docker Compose and Python for the OPC-UA simulator.  
+**Validation:** Telemetry delivery, command validation, broker restart and OT/IT separation.  
+**Performance plan:** Measure messages/second, MQTT-to-Kafka latency, write throughput and recovery time.  
+**Roadmap:** Integration tests, TLS, service authentication, retention policies and recovery objectives.
